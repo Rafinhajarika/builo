@@ -7,14 +7,21 @@
 .nav_header{
     position: relative;
     z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 45px;
 }
 .header_section{
-    width: 65%;
+    width: 72.5%;
     margin: 0 auto;
     background-color: white;
-    padding: 35px 0;
+    padding: 35px 0 33px;
     border-bottom-right-radius: 40px ;
     border-bottom-left-radius: 40px;
+}
+.buio {
+	padding-top: 15px;
 }
 .menu_list{
     display: flex;
@@ -48,7 +55,7 @@
     width: 13%;
     border-radius: 4px;
     transition: .3s all ease-in-out;
-    top: 95px;
+    top: 93px;
     background-color: white;
     box-shadow: 10px 10px 60px 0 rgba(63.99999999999996,49.99999999999999,13.999999999999991,.08);
     transform: scaleY(0);
@@ -67,7 +74,7 @@
     width: 13%;
     border-radius: 4px;
     transition: .3s all ease-in-out;
-    top: 95px;
+    top: 93px;
     background-color: white;
     box-shadow: 10px 10px 60px 0 rgba(63.99999999999996,49.99999999999999,13.999999999999991,.08);
     transform: scaleY(0);
@@ -86,7 +93,7 @@
     width: 13%;
     border-radius: 4px;
     transition: .3s all ease-in-out;
-    top: 95px;
+    top: 93px;
     background-color: white;
     box-shadow: 10px 10px 60px 0 rgba(63.99999999999996,49.99999999999999,13.999999999999991,.08);
     transform: scaleY(0);
@@ -185,21 +192,7 @@
 .dropdown_services{
     position: initial;
 }
-.services_two{
-    position: absolute;
-    top: 95px;
-    width: 100%;
-    transition: .3s all ease-in-out;
-    border-radius: 4px;
-    box-shadow: 10px 10px 60px 0 rgba(63.99999999999996,49.99999999999999,13.999999999999991,.08);
-    background-color: white;
-    transform: scaleY(0);
-    left: 0;
-    right: 0;
-    visibility: hidden;
-    overflow: hidden;
-    transform-origin: 0 0;
-}
+
 .dropdown_services:hover .services_two{
    transform: scaleY(1);
     visibility: visible;
@@ -308,7 +301,7 @@
 
 .services_two{
     position: absolute;
-    top: 95px;
+    top: 93px;
     width: 100%;
     transition: .3s all ease-in-out;
     border-radius: 4px;
@@ -337,7 +330,7 @@
     width: 13%;
     border-radius: 4px;
     transition: .3s all ease-in-out;
-    top: 95px;
+    top: 93px;
     background-color: white;
     box-shadow: 10px 10px 60px 0 rgba(63.99999999999996,49.99999999999999,13.999999999999991,.08);
     transform: scaleY(0);
@@ -559,7 +552,7 @@
 	justify-content: center;
 	gap: 100px;
 	padding-left: 20px;
-	padding-top: 91px;
+	padding-top: 170px;
 }
 .title_solar{
     font-size: 80px;
@@ -595,14 +588,14 @@
     text-transform: uppercase;
     
 }
-.solar_para::before{
-    position: absolute;
-    content: '';
-    background-color: white;
-    width: 7%;
-    height: 5%;
-    top: 10px;
-    left: -50px;
+.solar_para::before {
+	position: absolute;
+	content: '';
+	background-color: white;
+	width: 35px;
+	height: 1px;
+	top: 10px;
+	left: -50px;
 }
 .contact_flex{
     display: flex;
@@ -629,7 +622,7 @@
     background-color: white;
     border-radius: 50%;
     font-size: 20px;
-    padding: 10px;
+    padding: 7px;
     transform: rotate(-40deg);
     margin-left: 5px;
 }
@@ -642,14 +635,38 @@
     margin-left: 5px;
 }
 .more_btn{
-    background-color: #ECAC0A;
+    background-color: #ffb703;
     border-radius: 30px;
-    padding: 20px 32px 20px 32px;
+    padding: 12px 31px;
     text-decoration: none;
     line-height: 30px;
     font-size: 18px;
     letter-spacing: 0.9px;
     color: #322609;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    transition: .1s;
+}
+.more_btn span{
+    z-index: 10;
+    position: relative;
+}
+.more_btn::after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #ECAC0A;
+    height: 0%;
+    transition: 1s;
+}
+.more_btn:hover::after{
+    height: 100%;
+    bottom: 0;
+    top: initial;
 }
 .hlp{
     font-size: 14px;
@@ -690,11 +707,11 @@
 .projects::before {
 	position: absolute;
 	content: '';
-	top: 42%;
-	width: 26px;
-	height: 5%;
+	top: 12px;
+	width: 33px;
+	height: 1px;
 	background-color: #2F8318;
-	left: 46%;
+	left: 45.5%;
 }
 .what {
 	text-align: center;
@@ -709,11 +726,11 @@
 .what::before {
 	position: absolute;
 	content: '';
-	top: 42%;
-	width: 3%;
-	height: 5%;
+	top: 10px;
+	width: 36px;
+	height: 1px;
 	background-color: #2F8318;
-	left: 43%;
+	left: 522px;
 }
 .green_power{
     font-size: 60px;
@@ -788,6 +805,10 @@
 .energy_source:hover{
     border-color: #ECAC0A;
 }
+.energy_source .fa-solid.fa-circle-plus:hover {
+	color: #2f8318;
+	cursor: pointer;
+}
 .about_portion{
     background-color: #f7fff2;
     width: 100%;
@@ -808,24 +829,24 @@
 .about_image{
     width: 100%;
 }
-.about{
-    text-align: left;
-    position: relative;
-    color:  #2F8318;
-    font-size: 16px;
-    line-height: 25px;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-left: 45px;
+.about {
+	text-align: left;
+	position: relative;
+	color: #2F8318;
+	font-size: 16px;
+	line-height: 25px;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-left: 49px;
 }
 .about::before {
 	position: absolute;
 	content: '';
-	top: 42%;
-	width: 3%;
-	height: 5%;
+	top: 10px;
+	width: 35px;
+	height: 1px;
 	background-color: #2F8318;
-	left: -4%;
+	left: -46px;
 }
 .experience{
     color:  #322609;
@@ -1012,9 +1033,9 @@
 .plan::before {
 	position: absolute;
 	content: '';
-	top: 42%;
-	width: 3%;
-	height: 3%;
+	top: 12px;
+	width: 33px;
+	height: 1px;
 	background-color: #2F8318;
 	left: 43%;
 }
@@ -1090,16 +1111,46 @@
 .contact_us{
     border: 1px solid #2F8318;
     border-radius: 40px;
-    padding: 18px 28px 18px 28px;
+    padding: 8px 28px;
     font-size: 18px;
     line-height: 30px;
     text-decoration: none;
     color: #2F8318;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    transition: 1s;
+}
+.contact_us::after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #ffb703;
+    height: 0;
+    transition: 1s;
+    color: white;
+}
+.contact_us span{
+    z-index: 10;
+    position: relative;
+}
+.contact_us:hover{
+    border: 1px solid #ffb703;
+    color: white;
+}
+.contact_us:hover::after{
+    height: 100%;
+    bottom: 0;
+    top: initial;
+    
 }
 .contact .fa-solid.fa-arrow-right{
     
     font-size: 20px;
-    padding: 10px;
+    padding: 7px;
     transform: rotate(-40deg);
     margin-left: 5px;
 }
@@ -1121,9 +1172,9 @@
 .titlte_testimonial::before {
 	position: absolute;
 	content: '';
-	top: 42%;
-	width: 2%;
-	height: 3%;
+	top: 11px;
+	width: 33px;
+	height: 1px;
 	background-color: white;
 	left: 46%;
 }
@@ -1302,9 +1353,9 @@
 .methods::before {
 	position: absolute;
 	content: '';
-	top: 42%;
-	width: 4%;
-	height: 3%;
+	top: 12px;
+	width: 33px;
+	height: 1px;
 	background-color: #2F8318;
 	left: 0%;
 }
@@ -1374,17 +1425,16 @@
 }
 .worker_image{
     width: 100%;
+    height: 100%;
+    display: flex;
 }
 .alter_energy{
     background-color: #e9e9e9;
 }
 .worker{
     width: 45%;
-    background-image: url('image/faq.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 82vh;
+
+    height: 100%;
 }
 .blogs{
     background-color: #ff7714;
@@ -1403,9 +1453,9 @@
 .titlte_blog::before {
 	position: absolute;
 	content: '';
-	top: 42%;
-	width: 2%;
-	height: 3%;
+	top: 11px;
+	width: 33px;
+	height: 1px;
 	background-color: white;
 	left: 46%;
 }
@@ -1433,12 +1483,12 @@
     border-radius: 20px;
 }
 .worker_one{
-    transform: scale(1.03);
+    transform: scale(1.2);
     transition: 0.3s all ease-in-out;
     width: 100%;
 }
 .possssssst:hover .worker_one{
-    transform: scale(1);
+    transform: scale(1.1);
 }
 .date_of_post{
     position: absolute;
@@ -1498,14 +1548,37 @@
     margin-bottom: 33px;
 }
 .lets_talk {
-	border: 1px solid transparent;
 	border-radius: 40px;
-	padding: 18px 28px 18px 28px;
+	padding: 18px 40px 18px 40px;
 	font-size: 18px;
 	line-height: 30px;
 	text-decoration: none;
 	color: #ffffff;
     background-color: #ffb703;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+.lets_talk span{
+    z-index: 10;
+    position: relative;
+
+}
+.lets_talk::after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color:#2f8318;
+    height: 0%;
+    transition: 1s;
+}
+.lets_talk:hover::after{
+    height: 100%;
+    bottom: 0;
+    top: initial;
 }
 .lets_talk_two {
 	border: 1px solid transparent;
@@ -1731,7 +1804,7 @@ input[type="submit"]:hover{
         justify-content: center;
         /* gap: 100px; */
         padding-left: 142px;
-        padding-top: 115px;
+        padding-top: 185px;
     }
     .sub_menu_of_home {
         width: 16%;
@@ -1816,7 +1889,7 @@ input[type="submit"]:hover{
         justify-content: space-between;
         gap: 31px;
         padding-left: 0px;
-        padding-top: 95px;
+        padding-top: 175px;
         width: 90%;
         margin: 0 auto;
     }
@@ -1840,9 +1913,7 @@ input[type="submit"]:hover{
         padding-top: 112px;
         padding-bottom: 110px;
     }
-    .what::before {
-        width: 3%;
-    }
+   
     .experience {
         padding-right: 1%;
     }
@@ -1853,10 +1924,11 @@ input[type="submit"]:hover{
     }
     .college_portion {
         width: 45%;
-    }.about::before {
+    }
+    /* .about::before {
         width: 4%;
         left: -6%;
-    }
+    } */
     .done_flex {
         gap: 87px;
     }
@@ -1965,6 +2037,15 @@ input[type="submit"]:hover{
     .slider_nav_two {
         width: 30%;
     }
+    .titlte_blog::before {
+        position: absolute;
+        content: '';
+        top: 11px;
+        width: 33px;
+        height: 1px;
+        background-color: white;
+        left: 44.5%;
+    }
 }
 /* laptop_responsive_finished */
 /* tab_responsive_started */
@@ -1972,7 +2053,7 @@ input[type="submit"]:hover{
     .slider_nav_two {
         width: 100%;
     }
-    .nav_header{
+    .header_section {
         display: none;
     }
     .bannerback {
@@ -1980,10 +2061,19 @@ input[type="submit"]:hover{
         width: 100%;
         height: 100%;
         padding: 0 40px 150px 40px;
-        margin-top: 0px;
+        margin-top: -93px;
         position: relative;
     }
-    .solar_para::before {
+    .what::before {
+        position: absolute;
+        content: '';
+        top: 10px;
+        width: 36px;
+        height: 1px;
+        background-color: #2F8318;
+        left: 38%;
+    }
+    /* .solar_para::before {
         position: absolute;
         content: '';
         background-color: white;
@@ -1991,7 +2081,7 @@ input[type="submit"]:hover{
         height: 5%;
         top: 10px;
         left: -45px;
-    }
+    } */
     .banner_second_content_flex_portion{
         padding-left: 0px;
         gap: 0;
@@ -2017,7 +2107,8 @@ input[type="submit"]:hover{
         display: none;
     }
     .contact_flex_two{
-        display: block ruby;
+        display: flex;
+        align-items: center;
         position: absolute;
         bottom: 4%;
         left: 22%;
@@ -2037,9 +2128,9 @@ input[type="submit"]:hover{
         line-height: 50px;
         padding: 0 15%;
     }
-    .what::before {
+    /* .what::before {
         left: 40%;
-    }
+    } */
     .about_portion {
         background-color: #f7fff2;
         width: 100%;
@@ -2059,9 +2150,9 @@ input[type="submit"]:hover{
         padding: 40px 40px 40px 40px;
         margin-left: 0px;
     }
-    .about{
+    /* .about{
         margin-left: 30px;
-    }
+    } */
     .experience{
         padding-right: 0;
         font-size: 40px;
@@ -2210,7 +2301,7 @@ input[type="submit"]:hover{
     }
     .worker {
         width: 100%;
-        height: 78vh;
+        height: 100%;
     }
     .alter {
         font-size: 40px;
@@ -2261,7 +2352,7 @@ input[type="submit"]:hover{
     .slider_nav_two {
         width: 35%;
     }
-    .nav_header{
+    .header_section{
         display: none;
     }
     .bannerback {
@@ -2269,7 +2360,7 @@ input[type="submit"]:hover{
         width: 100%;
         height: 100%;
         padding: 0 40px 150px 40px;
-        margin-top: 0px;
+        margin-top: -93px;
         position: relative;
     }
     .banner_second_content_flex_portion{
@@ -2297,7 +2388,8 @@ input[type="submit"]:hover{
         display: none;
     }
     .contact_flex_two{
-        display: block ruby;
+        display: flex;
+        align-items: center;
         position: absolute;
         bottom: 4%;
         left: 22%;
@@ -2318,7 +2410,13 @@ input[type="submit"]:hover{
         padding: 0 15%;
     }
     .what::before {
-        left: 42%;
+        position: absolute;
+        content: '';
+        top: 10px;
+        width: 33px;
+        height: 1px;
+        background-color: #2F8318;
+        left: 41%;
     }
     .about_portion {
         background-color: #f7fff2;
@@ -2339,9 +2437,9 @@ input[type="submit"]:hover{
         padding: 40px 40px 40px 40px;
         margin-left: 0px;
     }
-    .about{
+    /* .about{
         margin-left: 30px;
-    }
+    } */
     .experience{
         padding-right: 0;
         font-size: 40px;
@@ -2544,16 +2642,30 @@ input[type="submit"]:hover{
         width: 80%;
         padding: 15px 40px 40px;
     }
-    .nav_header{
+    .header_section{
         display: none;
     }
     .bannerback {
-        padding: 20px 20px;
-        margin-top: 0px;
+        padding: 115px 20px;
+        margin-top: -93px;
     }
-    .solar_para::before {
+    .nav_header {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+    .what::before {
+        left: 100px;
+    }
+    .about::before {
+        left: 80px;
+    }
+    /* .solar_para::before {
         width: 10%;
-    }
+    } */
     .banner_content_flex_portion {
         padding-top: 0px;
     }
@@ -2593,10 +2705,10 @@ input[type="submit"]:hover{
     .category_portion {
         grid-template-columns: 1fr;
     }
-    .what::before {
+    /* .what::before {
         width: 7%;
         left: 30%;
-    }
+    } */
     .about_portion {
         padding: 0px;
     }
@@ -2613,7 +2725,7 @@ input[type="submit"]:hover{
         margin-left: 0px;
         padding: 40px 20px;
     }
-    .about::before {
+    /* .about::before {
         position: absolute;
         content: '';
         top: 42%;
@@ -2621,7 +2733,7 @@ input[type="submit"]:hover{
         height: 5%;
         background-color: #2F8318;
         left: 28%;
-    }
+    } */
     .experience {
         color: #322609;
         font-size: 40px;
@@ -2867,6 +2979,8 @@ input[type="submit"]:hover{
     .email_portion_one{
         margin: 30px 0;
     }
-}
+    .divider_two {
+        display: none;
+    }
 
 /* mobile_responsive_finished */
