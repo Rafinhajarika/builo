@@ -2365,8 +2365,8 @@ input[type="submit"]:hover{
     }
     .banner_second_content_flex_portion{
         padding-left: 0px;
-        gap: 0;
         padding-top: 63px;
+        gap: 0;
     }
     .power{
         width: 50%;
