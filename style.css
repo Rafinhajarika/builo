@@ -20,6 +20,9 @@
 	border-bottom-right-radius: 40px;
 	border-bottom-left-radius: 40px;
 }
+.fa-solid.fa-angle-down{
+    font-size: 14px;
+}
 .buio {
 	padding-top: 15px;
 	width: 9.5%;
@@ -1282,7 +1285,7 @@
     
 }
 .swiper-button-prev{
-	border: 1px solid white;
+	border: 1px solid #4d4229;
 	border-radius: 50%;
 	padding: 10px 20px;
 	color: white;
@@ -1300,7 +1303,7 @@
     border-color: transparent;
 }
 .swiper-button-next{
-	border: 1px solid white;
+	border: 1px solid #4d4229;
 	border-radius: 50%;
 	padding: 10px 20px;
 	color: white;
@@ -1308,6 +1311,13 @@
     position: absolute;
     top: 55%;
     right: 15%;
+}
+.swiper-button-prev::after, .swiper-rtl .swiper-button-next::after {
+	content: '';
+}
+
+.swiper-button-next::after, .swiper-rtl .swiper-button-prev::after {
+	content: '';
 }
 .pagination{
     width: 50%;
@@ -2685,7 +2695,7 @@ input[type="submit"]:hover{
         width: 50%;
     }
     .bannerback {
-        padding: 115px 20px;
+        padding: 115px 20px 75px;
         margin-top: -93px;
     }
     .nav_header {
@@ -2697,10 +2707,10 @@ input[type="submit"]:hover{
         padding: 0 20px;
     }
     .what::before {
-        left: 100px;
+        left: 80px;
     }
     .about::before {
-        left: 80px;
+        left: 55px;
     }
     /* .solar_para::before {
         width: 10%;
@@ -2713,7 +2723,6 @@ input[type="submit"]:hover{
         padding-left: 0px;
         padding-top: 40px;
         flex-wrap: wrap;
-        flex-direction: column-reverse;
     }
     .power {
         width: 100%;
@@ -2722,7 +2731,7 @@ input[type="submit"]:hover{
         width: 100%;
     }
     .title_solar {
-        font-size: 40px;
+        font-size: 35px;
         color: white;
         line-height: 50px;
         font-weight: 800;
@@ -2818,8 +2827,8 @@ input[type="submit"]:hover{
         padding: 40px 0;
     }
     .projects::before {
-        width: 5%;
-        left: 34%;
+        width: 35px;
+        left: 105px ;
     }
     .latest {
         font-size: 40px;
@@ -2867,10 +2876,10 @@ input[type="submit"]:hover{
         padding: 0;
     }
     .plan::before {
-        top: 43%;
-        width: 5%;
-        left: 35%;
+        width: 35px;
+        left: 105px ;
     }
+   
     .clients_say {
         font-size: 40px;
         line-height: 50px;
@@ -2883,10 +2892,10 @@ input[type="submit"]:hover{
         padding: 40px 20px;
     }
     .titlte_testimonial::before {
-        top: 46%;
-        width: 6%;
-        left: 34%;
+        width: 35px;
+        left: 105px ;
     }
+    
     .testimonial .swiper {
         width: 100%;
         height: 100%;

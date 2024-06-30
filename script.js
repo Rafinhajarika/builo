@@ -1,5 +1,5 @@
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 4,
+    
     loop: true,
     grabCursor: true,
     autoplay: {
@@ -16,7 +16,7 @@ var swiper = new Swiper(".mySwiper", {
           slidesPerView: 2,
           spaceBetween: 0,
         },
-        1600: {
+        1200: {
           slidesPerView: 4,
           spaceBetween: 0,
         },
