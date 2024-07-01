@@ -1818,7 +1818,8 @@ input[type="submit"]:hover{
     }
     .power {
         width: 50%;
-    }.banner_second_content_flex_portion {
+    }
+    .banner_second_content_flex_portion {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -2710,10 +2711,10 @@ input[type="submit"]:hover{
         padding: 0 20px;
     }
     .what::before {
-        left: 80px;
+        display: none;
     }
     .about::before {
-        left: 55px;
+        display: none;
     }
     /* .solar_para::before {
         width: 10%;
@@ -2756,10 +2757,9 @@ input[type="submit"]:hover{
     .category_portion {
         grid-template-columns: 1fr;
     }
-    /* .what::before {
-        width: 7%;
-        left: 30%;
-    } */
+    .what {
+       padding-left: 0px;
+    }
     .about_portion {
         padding: 0px;
     }
@@ -2825,13 +2825,16 @@ input[type="submit"]:hover{
     }
     .about {
         text-align: center;
+        margin-left: 0px;
     }
     .our_projects {
         padding: 40px 0;
     }
     .projects::before {
-        width: 35px;
-        left: 105px ;
+        display: none;
+    }
+    .projects{
+        padding-left: 0px;
     }
     .latest {
         font-size: 40px;
@@ -2879,10 +2882,11 @@ input[type="submit"]:hover{
         padding: 0;
     }
     .plan::before {
-        width: 35px;
-        left: 105px ;
+       display: none;
     }
-   
+    .plan{
+        padding-left: 0;
+    }
     .clients_say {
         font-size: 40px;
         line-height: 50px;
@@ -2895,10 +2899,11 @@ input[type="submit"]:hover{
         padding: 40px 20px;
     }
     .titlte_testimonial::before {
-        width: 35px;
-        left: 105px ;
+       display: none;
     }
-    
+    .titlte_testimonial{
+        padding-left: 0px;
+    }
     .testimonial .swiper {
         width: 100%;
         height: 100%;
@@ -2963,22 +2968,29 @@ input[type="submit"]:hover{
         width: 100%;
     }
     .titlte_blog::before {
-        top: 46%;
-        width: 8%;
-        left: 32%;
+       display: none;
+    }
+    .titlte_blog{
+        padding-left: 0;
     }
     .worker {
         width: 100%;
     }
     .methods::before {
-        width: 8%;
+        display: none;
     }
     .methods {
-        padding-left: 50px;
+        padding-left: 0px;
+        text-align: center;
     }
     .alter {
         font-size: 40px;
         line-height: 50px;
+        text-align: center;
+    }
+    .sust{
+        padding-right: 0%;
+        text-align: center;
     }
     .blogs {
         padding: 40px 20px;
