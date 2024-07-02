@@ -23,6 +23,8 @@
 .fa-solid.fa-angle-down {
     font-size: 14px;
     padding-left: 2px;
+    position: absolute;
+    bottom: 0;
 }
 .buio {
 	padding-top: 15px;
@@ -47,6 +49,7 @@
     line-height: 25px;
     font-weight: 500;
     color: #505050;
+    position: relative;
 }
 .menu_list  li  a:hover{
     color: #ffb703;
